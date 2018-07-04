@@ -33,15 +33,9 @@ namespace HubConnectionManager
             }
         }
 
-        public ConnectionState State
-        {
-            get { return _hubConnection.State; }
-        }
+        public ConnectionState State => _hubConnection.State;
 
-        public IClientTransport ConnectionType
-        {
-            get { return _hubConnection.Transport; }
-        }
+        public IClientTransport ConnectionType => _hubConnection.Transport;
 
         private HubConnectionManager(string url)
         {
@@ -69,7 +63,7 @@ namespace HubConnectionManager
         {
             if (string.IsNullOrEmpty(hubName))
             {
-                throw new ArgumentNullException("hubName");
+                throw new ArgumentNullException(nameof(hubName));
             }
 
             return _hubConnection.CreateHubProxy(hubName);
