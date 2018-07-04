@@ -1,3 +1,6 @@
+Special Thanks To https://github.com/killnine for helping us at https://github.com/killnine/HubConnectionManager
+I'll try to improve it more.
+
 HubConnectionManager
 
 Usage
